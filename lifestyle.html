@@ -43,39 +43,108 @@
     <section>
       <span class="eyebrow">Gallery</span>
       <h2>Travel, Photography, and Service</h2>
-      <div class="gallery">
-        <button type="button"><img src="images/gallery/photo-01.jpg" alt="Photo 1 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-02.jpg" alt="Photo 2 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-03.jpg" alt="Photo 3 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-04.jpg" alt="Photo 4 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-05.jpg" alt="Photo 5 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-06.jpg" alt="Photo 6 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-07.jpg" alt="Photo 7 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-08.jpg" alt="Photo 8 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-09.jpg" alt="Photo 9 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-10.jpg" alt="Photo 10 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-11.jpg" alt="Photo 11 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-12.jpg" alt="Photo 12 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-13.jpg" alt="Photo 13 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-14.jpg" alt="Photo 14 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-15.jpg" alt="Photo 15 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-16.jpg" alt="Photo 16 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-17.jpg" alt="Photo 17 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-18.jpg" alt="Photo 18 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-19.jpg" alt="Photo 19 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-20.jpg" alt="Photo 20 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-21.jpg" alt="Photo 21 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-22.jpg" alt="Photo 22 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-23.jpg" alt="Photo 23 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-24.jpg" alt="Photo 24 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-25.jpg" alt="Photo 25 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-26.jpg" alt="Photo 26 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-27.jpg" alt="Photo 27 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-28.jpg" alt="Photo 28 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-29.jpg" alt="Photo 29 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-30.jpg" alt="Photo 30 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-31.jpg" alt="Photo 31 of 32" loading="lazy"></button>
-        <button type="button"><img src="images/gallery/photo-32.jpg" alt="Photo 32 of 32" loading="lazy"></button>
+      <div class="slideshow" aria-roledescription="carousel" aria-label="Featured photos">
+        <div class="slides" data-lightbox>
+          <figure class="slide"><img src="images/gallery/photo-14.jpg" width="1179" height="1481" alt="Featured photo 1"></figure>
+          <figure class="slide"><img src="images/gallery/photo-07.jpg" width="1200" height="1600" alt="Featured photo 2" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-01.jpg" width="1179" height="766" alt="Featured photo 3" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-19.jpg" width="1440" height="758" alt="Featured photo 4" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-22.jpg" width="1200" height="1600" alt="Featured photo 5" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-09.jpg" width="1600" height="1075" alt="Featured photo 6" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-05.jpg" width="1600" height="1200" alt="Featured photo 7" loading="lazy"></figure>
+          <figure class="slide"><img src="images/gallery/photo-32.jpg" width="1440" height="956" alt="Featured photo 8" loading="lazy"></figure>
+        </div>
+        <button type="button" class="slide-prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" class="slide-next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="slide-dots">
+          <button type="button" aria-label="Go to photo 1"></button>
+          <button type="button" aria-label="Go to photo 2"></button>
+          <button type="button" aria-label="Go to photo 3"></button>
+          <button type="button" aria-label="Go to photo 4"></button>
+          <button type="button" aria-label="Go to photo 5"></button>
+          <button type="button" aria-label="Go to photo 6"></button>
+          <button type="button" aria-label="Go to photo 7"></button>
+          <button type="button" aria-label="Go to photo 8"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-row">
+      <div class="row-head">
+        <h2>Travel</h2>
+        <div class="row-arrows">
+          <button type="button" class="row-prev" aria-label="Scroll Travel left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button type="button" class="row-next" aria-label="Scroll Travel right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="row-track" data-lightbox>
+          <button type="button" class="tile"><img src="images/gallery/photo-03.jpg" width="1200" height="1600" alt="Travel photo 1" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-14.jpg" width="1179" height="1481" alt="Travel photo 2" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-22.jpg" width="1200" height="1600" alt="Travel photo 3" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-16.jpg" width="1200" height="1600" alt="Travel photo 4" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-10.jpg" width="1200" height="1600" alt="Travel photo 5" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-12.jpg" width="900" height="1600" alt="Travel photo 6" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-08.jpg" width="1179" height="1584" alt="Travel photo 7" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-28.jpg" width="1200" height="1600" alt="Travel photo 8" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-29.jpg" width="1200" height="1600" alt="Travel photo 9" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="photo-row">
+      <div class="row-head">
+        <h2>Service &amp; Community</h2>
+        <div class="row-arrows">
+          <button type="button" class="row-prev" aria-label="Scroll Service and Community left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button type="button" class="row-next" aria-label="Scroll Service and Community right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="row-track" data-lightbox>
+          <button type="button" class="tile"><img src="images/gallery/photo-19.jpg" width="1440" height="758" alt="Service and Community photo 1" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-21.jpg" width="1179" height="1022" alt="Service and Community photo 2" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-17.jpg" width="1440" height="755" alt="Service and Community photo 3" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-05.jpg" width="1600" height="1200" alt="Service and Community photo 4" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-31.jpg" width="1200" height="1000" alt="Service and Community photo 5" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-25.jpg" width="1200" height="1600" alt="Service and Community photo 6" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-13.jpg" width="1600" height="1200" alt="Service and Community photo 7" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-04.jpg" width="1600" height="1200" alt="Service and Community photo 8" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-30.jpg" width="900" height="1600" alt="Service and Community photo 9" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="photo-row">
+      <div class="row-head">
+        <h2>Photography</h2>
+        <div class="row-arrows">
+          <button type="button" class="row-prev" aria-label="Scroll Photography left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button type="button" class="row-next" aria-label="Scroll Photography right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="row-track" data-lightbox>
+          <button type="button" class="tile"><img src="images/gallery/photo-07.jpg" width="1200" height="1600" alt="Photography photo 1" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-09.jpg" width="1600" height="1075" alt="Photography photo 2" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-26.jpg" width="1200" height="1600" alt="Photography photo 3" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-32.jpg" width="1440" height="956" alt="Photography photo 4" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-20.jpg" width="1600" height="1058" alt="Photography photo 5" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-23.jpg" width="1200" height="1600" alt="Photography photo 6" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-06.jpg" width="1144" height="1562" alt="Photography photo 7" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-15.jpg" width="1179" height="905" alt="Photography photo 8" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="photo-row">
+      <div class="row-head">
+        <h2>Milestones</h2>
+        <div class="row-arrows">
+          <button type="button" class="row-prev" aria-label="Scroll Milestones left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button type="button" class="row-next" aria-label="Scroll Milestones right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="row-track" data-lightbox>
+          <button type="button" class="tile"><img src="images/gallery/photo-01.jpg" width="1179" height="766" alt="Milestones photo 1" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-18.jpg" width="1600" height="1588" alt="Milestones photo 2" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-02.jpg" width="1600" height="1200" alt="Milestones photo 3" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-24.jpg" width="1600" height="1200" alt="Milestones photo 4" loading="lazy"></button>
+          <button type="button" class="tile"><img src="images/gallery/photo-11.jpg" width="1200" height="1600" alt="Milestones photo 5" loading="lazy"></button>
       </div>
     </section>
   </main>
