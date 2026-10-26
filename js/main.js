@@ -8,6 +8,26 @@ if (toggle && nav) {
   });
 }
 
+// Light / dark mode switch (remembers the visitor's choice)
+const themeBtn = document.querySelector(".theme-toggle");
+if (themeBtn) {
+  const root = document.documentElement;
+  const isDark = () =>
+    root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const setIcon = () => {
+    themeBtn.querySelector("i").className = isDark() ? "fa-solid fa-sun" : "fa-solid fa-moon";
+  };
+  setIcon();
+  themeBtn.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    setIcon();
+  });
+}
+
 // Photo gallery lightbox (Lifestyle page)
 const box = document.querySelector(".lightbox");
 if (box) {

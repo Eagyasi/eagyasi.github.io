@@ -9,12 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html"><img src="images/logo.png" alt="">EAG</a>
+      <div class="header-tools">
+      <button class="theme-toggle" aria-label="Switch light or dark mode" title="Light / dark mode"><i class="fa-solid fa-moon"></i></button>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
@@ -26,43 +30,63 @@
         <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
-  <main class="wrap" style="padding-top:0">
-    <section class="hero">
+  <main class="wrap">
+    <section class="intro">
       <div>
         <p class="greeting">Akwaaba <span class="ipa">/ɑ́kʷàːbá/</span> ‘Welcome’</p>
-        <h1>Hello! I am Emmanuel Appiah Gyasi</h1>
+        <h1>Emmanuel Appiah Gyasi</h1>
         <p class="ipa">/ɪˈmæn.jʊəl ɑpʲɪa d͡ʒɛsɪ/</p>
-        <p class="lead">a budding Linguist, Educator, and Community Enthusiast</p>
+        <p class="affil">PhD Student in <a href="https://uwm.edu/linguistics/">Linguistics</a> · University of Wisconsin, Milwaukee</p>
+        <p>I am a budding Linguist, Educator, and Community Enthusiast. My research spans <strong>phonology</strong>, <strong>psycholinguistics</strong>, and <strong>second language linguistics</strong>, with a current focus on complex segments such as Ewe's labiovelars [kp, gb] and affricates [ts, dz], studied through theoretical and experimental methods.</p>
+        <p>I am also an instructor of record at UWM and a co-organizer of the Phonetics &amp; Phonology Reading Group (P-Group).</p>
+        <div class="actions">
+          <a class="btn" href="https://drive.google.com/file/d/1CQ8pYFx0bQKdi3ZWZxX2ZyyRYI_8srXB/view?usp=drive_link"><i class="fa-solid fa-file-arrow-down"></i> Download my CV</a>
+          <a class="btn" href="research.html"><i class="fa-solid fa-microscope"></i> My Research</a>
+        </div>
       </div>
-      <img src="images/home-banner.jpg" alt="Emmanuel standing by the water">
+      <aside class="profile">
+        <img src="images/headshot.jpg" alt="Emmanuel Appiah Gyasi">
+        <ul class="icons">
+          <li><a href="mailto:eagyasi@uwm.edu" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=emmanuel+Appiah+Gyasi&amp;hl=en&amp;oi=ao" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/emmanuel-appiah-gyasi-b6abb91a9/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.facebook.com/appiahgyasiemmmanuel" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </ul>
+      </aside>
     </section>
 
     <section>
-      <span class="eyebrow">Latest</span>
-      <h2>News</h2>
-      <ul class="news">
-        <li><strong>Presenting at MidPhon31:</strong> I will be presenting a paper titled “Phonetic evidence for an ‘unordered’ representation of Labiovelar stops: An experimental view on Ewe” at the 31st Mid-Continental Phonetics and Phonology Conference at Saint Louis University.</li>
-        <li><strong>Award:</strong> I am thrilled to announce that I received the Outstanding Graduate Student Award at the 2026 UWM Students' Excellence Awards. Find the link to the event website <a href="https://uwm.edu/studentinvolvement/get-involved/leadership/student-excellence-awards/#award-winners">here</a>.</li>
-        <li><strong>New Position:</strong> I am excited to assume a new position as an instructor of Record for the 2025-2026 academic year.</li>
-      </ul>
-    </section>
-
-    <section>
-      <span class="eyebrow">In progress</span>
-      <h2>Upcoming projects</h2>
-      <ul class="news">
-        <li><strong>Preliminary Paper:</strong> I am currently working on my preliminary paper, which primarily explores the phonological representations of complex segments, specifically Ewe's [kp, gb] and affricates [ts, dz], using experimental methods.</li>
-      </ul>
-    </section>
-
-    <section>
-      <span class="eyebrow">Archive</span>
-      <h2>Earlier</h2>
-      <ul class="news">
-        <li><strong>Talk at P-Group:</strong> I shared a talk on a class project titled <em>On the Bilinguals Linguistic System(s): Asymmetries in Processing Demands of Phonotactic Constraints</em> at the Phonetics and Phonology (P-Group) reading group.</li>
-      </ul>
+      <h2 class="rule">News</h2>
+      <ol class="timeline">
+        <li>
+          <span class="dot"><i class="fa-solid fa-microphone"></i></span>
+          <time>October 2026</time>
+          <p><strong>Presented at MidPhon31:</strong> I presented a paper titled <em>Phonetic evidence for an ‘unordered’ representation of Labiovelar stops: An experimental view on Ewe</em> at the 31st Mid-Continental Phonetics and Phonology Conference at Saint Louis University (October 16–17).</p>
+        </li>
+        <li>
+          <span class="dot"><i class="fa-solid fa-circle-check"></i></span>
+          <time>September 2026</time>
+          <p><strong>Preliminary Paper:</strong> I passed my preliminary paper on September 25. The paper explores the phonological representations of complex segments, specifically Ewe's [kp, gb] and affricates [ts, dz], using experimental methods.</p>
+        </li>
+        <li>
+          <span class="dot"><i class="fa-solid fa-award"></i></span>
+          <time>April 2026</time>
+          <p><strong>Award:</strong> I am thrilled to announce that I received the Outstanding Graduate Student Award at the 2026 UWM Students' Excellence Awards on April 27. <a href="https://uwm.edu/studentinvolvement/get-involved/leadership/student-excellence-awards/#award-winners">See the event website &rarr;</a></p>
+        </li>
+        <li>
+          <span class="dot"><i class="fa-solid fa-chalkboard-user"></i></span>
+          <time>November 2025</time>
+          <p><strong>Talk at P-Group:</strong> I shared a talk on a class project titled <em>On the Bilinguals Linguistic System(s): Asymmetries in Processing Demands of Phonotactic Constraints</em> at the Phonetics and Phonology (P-Group) reading group.</p>
+        </li>
+        <li>
+          <span class="dot"><i class="fa-solid fa-briefcase"></i></span>
+          <time>2025–2026</time>
+          <p><strong>New Position:</strong> I am excited to assume a new position as an instructor of Record for the 2025-2026 academic year.</p>
+        </li>
+      </ol>
     </section>
   </main>
   <footer class="site-footer">
