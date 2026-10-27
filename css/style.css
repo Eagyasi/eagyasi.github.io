@@ -197,16 +197,6 @@ main.wrap { padding-top: 48px; padding-bottom: 72px; }
 
 section + section { margin-top: 56px; }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
 h2 { font-size: 1.8rem; margin: 0 0 16px; }
 h3 { font-size: 1.25rem; margin: 0 0 8px; }
 
