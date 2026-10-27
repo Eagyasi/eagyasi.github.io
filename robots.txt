@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eagyasi.github.io/sitemap.xml
