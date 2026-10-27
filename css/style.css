@@ -362,9 +362,10 @@ h2.rule { padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bot
 .card + .card { margin-top: 16px; }
 
 
-.langs { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
+.langs { margin: 0; }
 .langs dt { font-weight: 600; color: var(--navy); }
-.langs dd { margin: 0; }
+.langs dd { margin: 0 0 14px; }
+.langs dd:last-child { margin-bottom: 0; }
 
 /* lifestyle: slideshow */
 .slideshow {
