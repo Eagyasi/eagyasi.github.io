@@ -5,8 +5,8 @@
   --accent-soft: #fbeee6;
   --ink: #1f2328;
   --muted: #5b6470;
-  --line: #e4e1dc;
-  --bg: #fbfaf7;
+  --line: #e5e7eb;
+  --bg: #ffffff;
   --card: #ffffff;
   --serif: "Source Serif 4", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -16,27 +16,27 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --navy: #9fbbe0;
-    --navy-deep: #0d1726;
+    --navy-deep: #0a0a0a;
     --accent: #f08a54;
-    --accent-soft: #2b1f19;
-    --ink: #e8e6e3;
-    --muted: #a3abb5;
-    --line: #2c3340;
-    --bg: #121820;
-    --card: #19212c;
+    --accent-soft: #2a1a12;
+    --ink: #ededed;
+    --muted: #a1a1aa;
+    --line: #2a2a2a;
+    --bg: #000000;
+    --card: #111111;
   }
 }
 
 :root[data-theme="dark"] {
   --navy: #9fbbe0;
-  --navy-deep: #0d1726;
+  --navy-deep: #0a0a0a;
   --accent: #f08a54;
-  --accent-soft: #2b1f19;
-  --ink: #e8e6e3;
-  --muted: #a3abb5;
-  --line: #2c3340;
-  --bg: #121820;
-  --card: #19212c;
+  --accent-soft: #2a1a12;
+  --ink: #ededed;
+  --muted: #a1a1aa;
+  --line: #2a2a2a;
+  --bg: #000000;
+  --card: #111111;
 }
 
 * { box-sizing: border-box; }
@@ -355,6 +355,7 @@ h2.rule { padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bot
 .refs { padding-left: 0; list-style: none; }
 .refs li { padding: 12px 0; border-bottom: 1px solid var(--line); }
 .refs li:last-child { border-bottom: none; }
+.refs.apa li { padding-left: 2em; text-indent: -2em; }
 .tag { font-size: 0.8rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
 
 /* cards */
