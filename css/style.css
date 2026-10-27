@@ -188,6 +188,10 @@ h1, h2, h3 {
 
 @media (max-width: 600px) { .banner { height: 240px; } }
 
+.banner-center { align-items: center; text-align: center; }
+.banner-center .wrap { padding-bottom: 0; }
+.banner-center::after { background: rgba(10, 18, 30, 0.45); }
+
 /* ---------- content ---------- */
 main.wrap { padding-top: 48px; padding-bottom: 72px; }
 
@@ -214,7 +218,7 @@ h3 { font-size: 1.25rem; margin: 0 0 8px; }
 .intro {
   display: grid;
   grid-template-columns: 1fr 260px;
-  grid-template-areas: "head photo" "body photo";
+  grid-template-areas: "head head" "body photo";
   grid-template-rows: auto 1fr;
   column-gap: 48px;
   align-items: start;
@@ -225,9 +229,9 @@ h3 { font-size: 1.25rem; margin: 0 0 8px; }
 .profile { grid-area: photo; }
 
 .intro h1 { font-size: clamp(2.3rem, 5.5vw, 3.2rem); margin: 0; }
-.greeting { font-family: var(--serif); font-size: 1.15rem; color: var(--accent); margin: 0 0 6px; }
-.intro .ipa { margin: 2px 0 6px; }
-.affil { color: var(--muted); margin: 0 0 22px; font-size: 1.05rem; }
+.greeting { font-family: var(--serif); font-size: 1.25rem; color: var(--accent); margin: 0 0 26px; text-align: center; }
+.name-ipa { display: inline-block; font-size: 1.15rem; font-weight: 400; vertical-align: middle; margin-left: 6px; }
+.affil { color: var(--muted); margin: 8px 0 22px; font-size: 1.05rem; }
 .intro-body > p:first-child { margin-top: 0; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
@@ -357,9 +361,6 @@ h2.rule { padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bot
 
 .card + .card { margin-top: 16px; }
 
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.two-col .card + .card { margin-top: 0; }
-@media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
 
 .langs { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
 .langs dt { font-weight: 600; color: var(--navy); }
