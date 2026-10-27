@@ -18,6 +18,18 @@ if (themeBtn) {
   });
 }
 
+// Pronunciation buttons: play a short recording
+document.querySelectorAll(".say").forEach((btn) => {
+  const audio = new Audio(btn.dataset.audio);
+  audio.preload = "none";
+  audio.addEventListener("ended", () => btn.classList.remove("playing"));
+  btn.addEventListener("click", () => {
+    audio.currentTime = 0;
+    audio.play();
+    btn.classList.add("playing");
+  });
+});
+
 // Featured slideshow (Lifestyle page)
 const show = document.querySelector(".slideshow");
 if (show) {

@@ -221,6 +221,22 @@ h3 { font-size: 1.25rem; margin: 0 0 8px; }
 .intro h1 { font-size: clamp(2.3rem, 5.5vw, 3.2rem); margin: 0; }
 .greeting { font-family: var(--serif); font-size: 1.25rem; color: var(--accent); margin: 0 0 26px; text-align: center; }
 .name-ipa { display: inline-block; font-size: 1.15rem; font-weight: 400; vertical-align: middle; margin-left: 6px; }
+
+.say {
+  width: 34px;
+  height: 34px;
+  margin-left: 4px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-style: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.say:hover, .say.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
 .affil { color: var(--muted); margin: 8px 0 22px; font-size: 1.05rem; }
 .intro-body > p:first-child { margin-top: 0; }
 
